@@ -1,7 +1,7 @@
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Table } from 'react-bootstrap';
+// import { Table } from 'react-bootstrap';
 import './EditProduct.css'
 
 const EditProduct = (props) => {

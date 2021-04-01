@@ -12,7 +12,7 @@ const Admin = () => {
     const [imgURL, setImgURL] = useState(null);
     const [email] = useContext(emailContext);
 
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         console.log(data)
         const productDetails = {

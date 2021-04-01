@@ -14,7 +14,7 @@ const CheckOut = () => {
     }, [])
     console.log(checkOut.productName);
 
-    const [email, setEmail] = useContext(emailContext)
+    const [email] = useContext(emailContext)
     const history = useHistory()
     const handleCheckOut = () => {
         const userOrder = {
