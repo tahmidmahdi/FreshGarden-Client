@@ -1,0 +1,13 @@
+.editProduct{
+    
+    border-bottom: 1px solid black;
+    height:40px;
+    margin-left: 50px;
+
+}
+
+.addProductBtns{
+    border: 0px;
+    background-color:transparent
+}
+
