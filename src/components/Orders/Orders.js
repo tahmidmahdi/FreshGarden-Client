@@ -8,7 +8,7 @@ const Orders = () => {
         fetch(`https://cherry-crisp-87098.herokuapp.com/orders/`+email)
         .then(res => res.json())
         .then(data => setOrders(data))
-    },[])
+    },[email])
     console.log(orders);
 
     return (

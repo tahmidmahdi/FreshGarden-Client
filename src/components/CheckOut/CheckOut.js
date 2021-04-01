@@ -11,7 +11,7 @@ const CheckOut = () => {
         fetch(`https://cherry-crisp-87098.herokuapp.com/checkOut/`+id)
             .then(res => res.json())
             .then(data => setCheckOut(data))
-    }, [])
+    }, [id])
     console.log(checkOut.productName);
 
     const [email] = useContext(emailContext)
