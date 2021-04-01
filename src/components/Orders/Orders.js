@@ -12,11 +12,11 @@ const Orders = () => {
     console.log(orders);
 
     return (
-        <div className="container">
-            <h3>Dear MR. {email}, Your Order(s) Is(Are):</h3>
+        <div className="container mt-5">
+            <h3>Dear {email}, Your Order(s) Are:</h3>
             <br/>
             {
-                orders.map(order => <li><strong>{order.productName}</strong></li>)
+                orders.map(order => <li><strong>{order.productName} --------- {order.productPrice}-------- & Order Time: {order.orderTime}</strong></li>)
             }
         </div>
     );

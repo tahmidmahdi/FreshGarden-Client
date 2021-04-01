@@ -108,9 +108,15 @@ const Admin = () => {
                 <br /><br />
                 <h5><FontAwesomeIcon icon={faPenSquare} />  Edit Product</h5>
             </div>
+            
+
             {(addProduct) && <div className='add-pannel'>
+                <h3><strong>Add Product Form</strong></h3>
+                <small>Must Fill Up The Form To Add A Product</small>
 
                 <form onSubmit={handleSubmit(onSubmit)} className='form'>
+
+
                     <label for='productName'><strong>Enter Product Name</strong></label>
                     <br />
                     <input name="productName" ref={register({ required: true })} placeholder="Enter Product Name" />
@@ -153,8 +159,12 @@ const Admin = () => {
 
             </div>}
             {(manageClicked && (!addProduct)) &&
-            
-                <EditProduct pd={productEdit}></EditProduct>
+
+                <div>
+                    <h3>All Products List</h3>
+                    <small>NB. You Can Delete A Product By Clicking Delete Icon</small>
+                    <EditProduct pd={productEdit}></EditProduct>
+                </div>
             }
 
         </div>

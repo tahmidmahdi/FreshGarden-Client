@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <div className="container">
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="/"><strong><h3>Fresh Garden</h3></strong></Navbar.Brand>
-                {/* <Link to="/"><strong><h3>Fresh Garden</h3></strong></Link> */}
+                {/* <Navbar.Brand href="/"><strong><h3>Fresh Garden</h3></strong></Navbar.Brand> */}
+                <Link to="/home"><strong><h3 style={{color:'black'}}>Fresh Garden</h3></strong></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto navv">
@@ -18,8 +18,8 @@ const Header = () => {
                         <Link to={`/orders/${email}`} className="link"><strong>Orders</strong></Link>
                         <Link to="/admin" className="link"><strong>Admin</strong></Link>
                         <Link to="/" className="link"><strong>Deals</strong></Link>
-                        {(email) && <Link to="/login" className="link"><strong>{email}</strong></Link>}
-                        {(!email) && <Link to="/login" className="link"><strong>Login</strong></Link>}
+                        {(email) && <Link to="/login" className="link loggedInUser"><strong>{email}</strong></Link>}
+                        {(!email) && <Link to="/login" className="link loggedInUser"><strong>Login</strong></Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -27,7 +27,7 @@ const Header = () => {
             <Navbar className="bg-light justify-content-center">
                 <Form inline>
                     <FormControl type="text" placeholder="Search By Food Name" className=" mr-sm-2" />
-                    <Button className="btn btn-warning"type="submit"><strong>Search</strong></Button>
+                    <Button className="btn btn-warning "type="submit"><strong>Search</strong></Button>
                 </Form>
             </Navbar>
         </div>

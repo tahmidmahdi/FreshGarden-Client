@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    background-color:#F4FCFB;
+    background-color: seashell;
+    background-image: linear-gradient(45deg, seashell, rgb(248, 232, 226));
     
 }
