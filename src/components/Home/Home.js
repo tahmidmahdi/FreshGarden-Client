@@ -11,7 +11,7 @@ const Home = () => {
         .then(res => res.json())
         .then(data => {
             setProducts(data)
-            setSpinner(false)    
+            setSpinner(false) 
         })
          
     },[])
